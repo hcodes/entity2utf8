@@ -1,0 +1,55 @@
+{
+  "name": "entity2utf8",
+  "description": "Find and replace html entities to UTF-8 symbols",
+  "version": "0.5.0",
+  "author": {
+    "name": "Denis Seleznev",
+    "email": "hcodes@yandex.ru",
+    "url": "https://github.com/hcodes"
+  },
+  "main": "index.js",
+  "homepage": "https://github.com/hcodes/entity2utf8",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/hcodes/entity2utf8/blob/master/LICENSE"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hcodes/entity2utf8.git"
+  },
+  "keywords": [
+    "charset",
+    "entities",
+    "entity",
+    "utf-8",
+    "utf8"
+  ],
+  "engines": {
+    "node": ">= 0.10"
+  },
+  "dependencies": {
+    "commander": "2.x",
+    "isutf8": "1.x"
+  },
+  "devDependencies": {
+    "chai": "1.x",
+    "istanbul": "0.3.x",
+    "jscs": "1.8.x",
+    "jshint": "2.x",
+    "mocha": "2.0.x",
+    "q": "^1.3.0",
+    "q-io": "^1.12.0"
+  },
+  "scripts": {
+    "test": "npm run-script jshint && npm run-script check-style && npm run-script unit-test-coverage",
+    "check-style": "./node_modules/.bin/jscs .",
+    "jshint": "./node_modules/.bin/jshint .",
+    "unit-test": "./node_modules/.bin/mocha -u bdd -R spec --recursive test",
+    "unit-test-coverage": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha -- -u bdd -R spec --recursive test"
+  },
+  "bin": {
+    "entity2utf8": "./bin/cli.js"
+  }
+}
