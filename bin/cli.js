@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var entity2utf8 = require('../lib/check-entity'),
+var entity2utf8 = require('../lib/entity2utf8'),
     log = require('../lib/log'),
     program = require('commander'),
     isutf8 = require('isutf8'),
