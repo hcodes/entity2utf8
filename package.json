@@ -1,7 +1,7 @@
 {
   "name": "entity2utf8",
   "description": "Find and replace html entities to UTF-8 symbols",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "author": {
     "name": "Denis Seleznev",
     "email": "hcodes@yandex.ru",
@@ -31,16 +31,16 @@
   },
   "dependencies": {
     "commander": "2.x",
-    "isutf8": "1.x"
+    "isutf8": "1.x",
+    "q": "^1.3.0",
+    "q-io": "^1.12.0"
   },
   "devDependencies": {
     "chai": "1.x",
     "istanbul": "0.3.x",
     "jscs": "1.8.x",
     "jshint": "2.x",
-    "mocha": "2.0.x",
-    "q": "^1.3.0",
-    "q-io": "^1.12.0"
+    "mocha": "2.0.x"
   },
   "scripts": {
     "test": "npm run-script jshint && npm run-script check-style && npm run-script unit-test-coverage",
