@@ -1,7 +1,7 @@
 {
   "name": "entity2utf8",
   "description": "Find and replace html entities to UTF-8 symbols",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "author": {
     "name": "Denis Seleznev",
     "email": "hcodes@yandex.ru",
