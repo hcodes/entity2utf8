@@ -22,7 +22,7 @@ if(!program.args.length) {
     program.help();
 }
 
-Q.all(program.args.map(function(file) {
+Q.allSettled(program.args.map(function(file) {
     return FS.read(file, 'b')
         .then(function(content) {
             if(!isutf8(content)) {
@@ -39,12 +39,11 @@ Q.all(program.args.map(function(file) {
                     log.error(item.original + ' → "' + item.replace + '"' +
                         (item.count > 1 ? ', count: ' + item.count : ''));
                 });
-            } else {
-                log.log('No errors.');
             }
         }, function() {
             log.errorNewLine(file + ': No such file');
         });
 })).then(function() {
+    log.hasErrors() && log.log('No errors');
     process.exit(log.hasErrors() ? 1 : 0);
 });
