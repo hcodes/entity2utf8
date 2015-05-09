@@ -22,8 +22,11 @@ Ignore entities:
 
 `entity2utf8 mytext1.txt mytext2.txt mytext3.txt`
 
-`entity2utf8 --ignore &nbsp;,&raquo; mytext1.txt`
+`entity2utf8 --ignore "&nbsp;,&raquo;" mytext1.txt`
 
+`entity2utf8 --ignore "&nbsp;,&raquo;" --exts ".html,.htm".
+
+`entity2utf8 --replace --ignore "&nbsp;,&raquo;" --exts ".html,.htm".
 
 ## License
 MIT License
