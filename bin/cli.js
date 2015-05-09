@@ -21,7 +21,6 @@ program
     .option('--replace', 'Replace entities to utf-8 symbols in files')
     .parse(process.argv);
 
-
 if(!program.args.length) {
     program.help();
 }
