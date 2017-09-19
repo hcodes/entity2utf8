@@ -6,7 +6,7 @@
 
 entity2utf8
 ======
-Find and replace html entities to UTF-8 symbols.
+Find and replace HTML entities to UTF-8 symbols.
 
 Ignore entities:
 + `&lt;`
