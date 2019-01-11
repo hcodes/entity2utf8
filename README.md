@@ -1,6 +1,7 @@
 [![Build Status](https://travis-ci.org/hcodes/entity2utf8.png?branch=master)](https://travis-ci.org/hcodes/entity2utf8)
 [![Coverage Status](https://img.shields.io/coveralls/hcodes/entity2utf8.svg?branch=master)](https://coveralls.io/r/hcodes/entity2utf8)
 [![NPM Version](http://img.shields.io/npm/v/entity2utf8.svg?style=flat)](https://www.npmjs.org/package/entity2utf8)
+[![Dependency Status](https://img.shields.io/david/hcodes/entity2utf8.svg)](https://david-dm.org/hcodes/entity2utf8) 
 [![NPM Downloads](https://img.shields.io/npm/dm/entity2utf8.svg?style=flat)](https://www.npmjs.org/package/entity2utf8)
 
 entity2utf8
