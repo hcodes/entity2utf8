@@ -30,7 +30,8 @@ $RECYCLE.BIN/
 .LSOverride
 
 # Icon must ends with two \r.
-Icon
+Icon
+
 
 # Thumbnails
 ._*
@@ -43,3 +44,4 @@ node_modules/
 libs/
 coverage/
 npm-debug.log
+.nyc_output

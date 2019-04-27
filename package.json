@@ -25,19 +25,19 @@
     "node": ">= 4"
   },
   "dependencies": {
-    "commander": "^2.19.0",
-    "isutf8": "^2.0.2"
+    "commander": "^2.20.0",
+    "isutf8": "^2.0.3"
   },
   "devDependencies": {
     "chai": "^4.2.0",
-    "eslint": "^5.12.0",
-    "istanbul": "^0.4.5",
-    "mocha": "^5.2.0"
+    "eslint": "^5.16.0",
+    "mocha": "^6.1.4",
+    "nyc": "^14.0.0"
   },
   "scripts": {
     "test": "eslint . && npm run-script unit-test-coverage",
-    "unit-test": "mocha -u bdd -R spec --recursive test",
-    "unit-test-coverage": "istanbul cover ./node_modules/mocha/bin/_mocha -- -u bdd -R spec --recursive test"
+    "unit-test": "mocha",
+    "unit-test-coverage": "nyc mocha"
   },
   "bin": {
     "entity2utf8": "./bin/cli.js"
